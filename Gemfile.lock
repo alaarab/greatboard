@@ -140,6 +140,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
+    obscenity (1.0.2)
     orm_adapter (0.5.0)
     public_suffix (4.0.6)
     puma (5.6.2)
@@ -234,6 +235,7 @@ DEPENDENCIES
   devise
   jbuilder
   jsbundling-rails
+  obscenity
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.3)
   selenium-webdriver
