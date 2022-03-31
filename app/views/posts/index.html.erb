@@ -2,13 +2,9 @@
 
 <h1>Posts</h1>
 
-<div id="posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
-  <% end %>
-</div>
+<%= turbo_stream_from "posts" %>
+<%= turbo_frame_tag "posts" do %>
+  <%= render @posts.last(3) %> 
+<% end %>
 
 <%= link_to "New post", new_post_path %>

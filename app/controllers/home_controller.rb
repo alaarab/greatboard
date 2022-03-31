@@ -1,3 +1,6 @@
 class HomeController < ApplicationController
-  def index; end
+  def index
+    @post = Post.new
+    @posts = Post.last(3)
+  end
 end
