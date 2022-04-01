@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
     @post = Post.new
-    @posts = Post.order(id: :desc).first(3)
+    @posts = Post.order(id: :desc).first(10)
   end
 end

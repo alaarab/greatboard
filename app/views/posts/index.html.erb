@@ -4,7 +4,7 @@
 
 <%= turbo_stream_from "posts" %>
 <%= turbo_frame_tag "posts" do %>
-  <%= render @posts.last(3) %> 
+  <%= render @posts %> 
 <% end %>
 
 <%= link_to "New post", new_post_path %>

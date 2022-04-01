@@ -12,6 +12,14 @@
 
   <body>
     <%= render 'layouts/navbar' %>
+    <% flash.each do |msg_type, message| %>
+      <div class="alert <%= bootstrap_class_for(msg_type) %>">
+        <div class="container">
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          <%= message %>
+        </div>
+      </div>
+    <% end %>
     <div class="container py-4">
       <%= yield %>
     </div>
