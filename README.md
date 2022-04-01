@@ -1,24 +1,25 @@
-# README
+Board
+================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application was created to test the functionality of Hotwire in Rails 7, but then became a great place to share ideas.
 
-Things you may want to cover:
+Ruby on Rails
+-------------
+This application requires:
 
-* Ruby version
+- Ruby 3.1.1
+- Rails 7.0.2.3
 
-* System dependencies
+Getting Started
+---------------
+Run the following:
 
-* Configuration
+```
+bundle
+yarn
+bin/dev
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Credits
+-------
+Ala Arab

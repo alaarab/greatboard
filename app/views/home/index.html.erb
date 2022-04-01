@@ -12,11 +12,13 @@
   </div>
 </div>
 
+<%= turbo_stream_from "posts" %>
+
 <div class="row">
   <div class="col-md-6">
     <div class="h-100 p-5 bg-light border rounded-3">
       <h2>Contribute</h2>
-      <%= turbo_frame_tag dom_id(@post) do %>
+      <%= turbo_frame_tag "post_form" do %>
         <%= render "posts/form", post: @post %>
       <% end %>
     </div>
@@ -24,9 +26,8 @@
   <div class="col-md-6">
     <div class="h-100 p-5 bg-light border rounded-3">
       <h2>Latest Posts</h2>
-      <%= turbo_stream_from "posts" %>
       <%= turbo_frame_tag "posts" do %>
-        <%= render @posts.last(3) %>
+        <%= render @posts %>
       <% end %>
     </div>
   </div>
